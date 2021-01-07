@@ -4,8 +4,8 @@ package board
 import (
 	"fmt"
 
-	"github.com/jglouis/4eail40_2020/exercises/chess/model/coord"
-	"github.com/jglouis/4eail40_2020/exercises/chess/model/piece"
+	"github.com/ablo340/4eail40_2020/exercises/chess/model/coord"
+	"github.com/ablo340/4eail40_2020/exercises/chess/model/piece"
 )
 
 // Board is an interface to a chess board.
@@ -22,4 +22,10 @@ type Board interface {
 	// PlacePieceAt places a given piece at given location.
 	// Returns an error if destination was occupied.
 	PlacePieceAt(p piece.Piece, at coord.ChessCoordinates) error
+}
+
+//  TODO exo : Implement a ClassicBuilder (don't forget the test(s)) !
+type Builder interface {
+	AddPiece(p piece.Piece, at coord.ChessCoordinates) Builder
+	Build() Board
 }
