@@ -4,8 +4,8 @@ package piece
 import (
 	"fmt"
 
-	"github.com/ablo340/4eail40_2020/exercises/chess/model/coord"
-	"github.com/ablo340/4eail40_2020/exercises/chess/model/player"
+	"github.com/Horsefactor/4eail40_2020_2021/exercises/chess/model/coord"
+	"github.com/Horsefactor/4eail40_2020_2021/exercises/chess/model/player"
 )
 
 // Piece represents a game piece
